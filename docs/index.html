@@ -220,6 +220,33 @@
       font-size: 1rem;
     }
   }
+/* Make hero “Book an Appointment” button responsive */
+.hero-content a {
+  position: relative; /* allow normal flow and prevent overlapping */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    position: static;      /* allow heading and button to flow naturally */
+    text-align: center;    /* center heading and button */
+    padding: 1rem;         /* optional spacing */
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;       /* smaller heading on mobile */
+  }
+  
+  .hero-content p {
+    font-size: 1rem;       /* smaller paragraph on mobile */
+  }
+  
+  .hero-content a {
+    display: block;        /* make button block-level */
+    margin: 1rem auto;     /* center below text with spacing */
+    font-size: 1rem;       /* smaller font on mobile */
+  }
+}
 
 </style>
 </head>
@@ -329,6 +356,7 @@
 
 </body>
 </html>
+
 
 
 
